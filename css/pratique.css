@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS document */
+
+/* CSS applicables à tout le document */
+body {
+	margin:0 auto;
+	padding: 0;
+	background:#e4dfdc;
+	font-family: 'Great Vibes', cursive;
+	max-width:1700px;
+}
+
+nav, footer {
+	font-family: Georgia, serif;
+}
+
+/* entête de page */
+header {
+	background-image: url(../images/caesar.png);
+	background-repeat: no-repeat;
+	background-position: 1075px -250px;
+	max-height:400px;
+}
+
+header img {
+	position:relative;
+	top:-115px;
+	left:100px;
+}
+
+header h1 {
+	font-size: 5em;
+	font-style: italic;
+	position: relative;
+	top:-500px;
+	left:575px;
+}
+
+header h1::after {
+	content: url(../images/cuilfour.png);
+}
+
+header h2 {
+	font-size: 3em;
+	font-style: italic;
+	position: relative;
+	top:-575px;
+	left:925px;
+}
+
+/* menu de navigation */
+nav {
+	width:45%;
+	margin:0px auto;
+}
+
+nav ul::before {
+	content: url(../images/zigoui1.png);
+}
+
+nav ul::after {
+	content: url(../images/zigoui2.png);
+}
+
+nav ul {
+	display:flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #269b23;
+	font-size:2em;
+}
+
+nav ul li a:hover {
+	color:black;
+	border-bottom: 3px solid;
+}
+
+/* contenu principal */
+main {
+	margin:10% auto 5% auto;
+	text-align: center;
+	font-size: 2.75em;
+}
+
+/* pied de page */
+footer {
+	margin:0px auto;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer a {
+	text-decoration: none;
+	color:black;
+}
+
+@media screen and (max-width: 960px) {
+
+	header img {
+		left:0px;
+	}
+
+	header h1 {
+	font-size: 3.5em;
+	top:-300px;
+	left:10px;
+	}
+
+	header h2 {
+		font-size: 2em;
+		font-style: italic;
+		position: relative;
+		top:-325px;
+		left:100px;
+	}
+
+	nav {
+		margin:25% auto 25% 10%;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		line-height: 5em;
+	}
+
+	nav ul li a:hover {
+		color: #269b23;
+		border-bottom: 0; 
+	}
+
+	footer {
+		width:100%;
+		flex-direction: column;
+		text-align: center;
+		font-size:1.75em;
+	}
+
+	footer div {
+		margin-top: 2.5%;
+	}
+
+	.tiret {
+		display:none;
+	}
+}
